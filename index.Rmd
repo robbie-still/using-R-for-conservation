@@ -1,4 +1,4 @@
---- 
+---
 title: "Using R for Conservation"
 author: "Robbie Still"
 date: "`r Sys.Date()`"
@@ -8,18 +8,45 @@ bibliography: [book.bib, packages.bib]
 url: your book url like https://robbie-still.github.io/using-R-for-conservation/
 cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+  A book designed to help people working in conservation to learn about all the ways that R can be used to help achieve   the end goal of saving the natural world. Beginning with automating repetitive data cleaning and ending with the       creation of websites and interactive dashboards, this guide should help both complete begineers and advanced R users.
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: robbie-still/using-R-for-conservation
 ---
 
 # About
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+Welcome to Using R for Conservation! This is my passion project, and something that I feel so strongly about and that works so well that I've managed to almost completely specialise in my own career. I am currently the Head of Digital Development at Kent Wildlife Trust, and my job can be defined by 3 key roles:
 
-## Usage 
+-   data engineer
+    -   working to link up the various systems we use, so that data from each can be analysed together in order to report on individuals/teams/the trust's progress against key performance indicators
+-   data scientist
+    -   using these data to create informative dashboards, reports and statistics, both internally and externally via the Kent Wildlife Trust Consultancy
+
+    -   this primarily involves GIS modelling to outline opportunity areas that would most benefit from a conservation project
+-   digital transformation
+    -   helping various teams implement new systems to replace spreadsheets, word documents and other manual processes
+
+Every single one of these is facilitated, in some way or other, by R. We use other systems, such as Power BI, Python, various pieces of in-built reporting/analytic within the CRM, Finance system, etc., but R is the glue that holds these together, and is the gateway into the world of computer science for a conservationist.
+
+I am an ecologist with an Undergrad in Biology and a Master's in Bioscience from [Swansea University](https://www.swansea.ac.uk/bioscience/). I enjoyed the yearly courses on R, which most other students hated, but really got into it during my Master's where I was creating species distribution models and could not get the [Maxent](https://biodiversityinformatics.amnh.org/open_source/maxent/) model to run via the .exe. I found an R package that did all the hard work for me ([ENMeval](https://cran.r-project.org/web/packages/ENMeval/index.html)) which really kickstarted my journey into trying to program everything! I previously worked at the [Thames Valley Environmental Records Centre](https://www.tverc.org/cms/) as an Biodiversity Data Assistant, then worked my way up to Data Manager. Record centres are, as you'd expect, almost entirely reliant on excellent data management and workflows. This allowed me to learn from an amazing team who were already working to transition from using an Access database and Macros, developed by an external consultant, to using entirely in-house solutions in R and SQL.
+
+I then joined KWT as a GIS and Remote Sensing Officer, a role that complements but does not necessarily rely on coding. I was incredibly lucky to join the trust at a time where they were looking to embark on a Digital Transformation and managed to get my foot in the door and moved role to a Digital Transformation Officer. I've really enjoyed this role and have been involved in the creation of the world's first [high integrity carbon registry](http://registry.wildercarbon.com/), created using PostgreSQL and R Shiny, and a variety of internal tools/improvements. I have recently moved up into the Leadership Team as Head of Digital Development and have hired a wonderful team to help me in this work. This does, however, mean that I have less time to do the actual coding myself - and so this blog has come into existence for me to play about with various things in my spare time and hopefully help inspire some people to do the same!
+
+In my opinion, conservation organisations (henceforth known as eNGOs - environmental non-government organisations) around the world are significantly lagging behind other industries in developing digital systems. This is understandable given the severe lack of funding, but in my (incredibly biased) opinion spending money on either a data scientist or the training for an existing member of staff will return the investment tenfold. The passing of the [Environment Act](https://www.legislation.gov.uk/ukpga/2021/30/contents/enacted) in the UK means that conservation is finally getting a small injection of cash, so now is the time to get digital systems in place!
+
+Currently many of the largest and most influential conservation NGOs around the world waste time and resources on manual tasks that could be almost fully automated with the use of any combination of the vast suite of open source programming languages - R, Python, SQL, Javascript, HTML, CSS, PHP, C++. International site designations are still managed by spreadsheets and shapefiles, annual reports are still created each year in word documents and graphs are made in Excel. [GIS](https://www.esri.com/en-us/what-is-gis/overview) is often the extent of digital systems in place, and is invaluable, but even this can be very labour intensive. ArcGIS and QGIS are written in Python but most GIS professionals in conservation won't know to advantage of the coding potential or the in-built [model builders](https://docs.qgis.org/2.8/en/docs/user_manual/processing/modeler.html).
+
+This is something that I aim to change, and I'm hoping that this blog will prove helpful to the other GIS Officers, Data Assistants and Database Managers out there aiming to do the same thing.
+
+## About me
+
+My name is Robbie Still and I am the Head of Digital Development at Kent Wildlife Trust.
+
+I am an ecologist with an Undergrad in Biology and a Master's in Bioscience from [Swansea University](https://www.swansea.ac.uk/bioscience/). I enjoyed the yearly courses on R, which most other students hated, but really got into it during my Master's where I was creating species distribution models and could not get the [Maxent](https://biodiversityinformatics.amnh.org/open_source/maxent/) model to run via the .exe. I found an R package that did all the hard work for me ([ENMeval](https://cran.r-project.org/web/packages/ENMeval/index.html)) which really kickstarted my journey into trying to program everything! I previously worked at the [Thames Valley Environmental Records Centre](https://www.tverc.org/cms/) as an Biodiversity Data Assistant, then worked my way up to Data Manager. Record centres are, as you'd expect, almost entirely reliant on excellent data management and workflows. This allowed me to learn from an amazing team who were already working to transition from using an Access database and Macros, developed by an external consultant, to using entirely in-house solutions in R and SQL.
+
+I then joined KWT as a GIS and Remote Sensing Officer, a role that complements but does not necessarily rely on coding. I was incredibly lucky to join the trust at a time where they were looking to embark on a Digital Transformation and managed to get my foot in the door and moved role to a Digital Transformation Officer. I've really enjoyed this role and have been involved in the creation of the world's first [high integrity carbon registry](http://registry.wildercarbon.com/), created using PostgreSQL and R Shiny, and a variety of internal tools/improvements. I have recently moved up into the Leadership Team as Head of Digital Development and have hired a wonderful team to help me in this work. This does, however, mean that I have less time to do the actual coding myself - and so this blog has come into existence for me to play about with various things in my spare time and hopefully help inspire some people to do the same!
+
+## Usage
 
 Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
 
@@ -31,9 +58,9 @@ The `index.Rmd` file is required, and is also your first book chapter. It will b
 
 You can render the HTML version of this example book without changing anything:
 
-1. Find the **Build** pane in the RStudio IDE, and
+1.  Find the **Build** pane in the RStudio IDE, and
 
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
+2.  Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
 
 Or build the book from the R console:
 
@@ -50,7 +77,6 @@ As you work, you may start a local server to live preview this HTML book. This p
 ```{r eval=FALSE}
 bookdown::serve_book()
 ```
-
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
